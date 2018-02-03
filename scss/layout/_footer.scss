@@ -1,0 +1,21 @@
+// ******************* FOOTER *********************
+footer{
+  background-color: $colorDarkBlue;
+  height: 128px;
+  // width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $colorWhite;
+  font-family: $roboto;
+  font-size: 14px;
+}
+
+.text-style-footer {
+  color:$colorOrange;
+}
+
+.icon-footer {
+  margin-top: -40px;
+}

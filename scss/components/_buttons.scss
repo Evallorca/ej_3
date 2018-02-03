@@ -1,0 +1,52 @@
+//********* BOTÓN HERO ************
+.icon-scroll {
+  background-color: white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-icon-hero {
+  width: 20px;
+  height: 11.7px;
+}
+
+
+// *************** BOTÓN SECCIÓN DESCRIPTION **********
+.button-description {
+  background-color: transparent;
+  border:2px solid $colorOrange;
+  width: 160px;
+  height: 45px;
+  border-radius: 22.5px;
+  color: $colorOrange;
+  font-family: $roboto;
+  font-weight: $robotoNormal;
+  font-size: 20px;
+  margin-bottom: 45px;
+  margin-top: 30px;
+  outline: none;
+  cursor: pointer;
+}
+
+// *************** BOTÓN SECCIÓN REASONS **********
+
+
+.button-reasons {
+  background-color: $colorOrange;
+  width: 184px;
+  height: 45px;
+  border-radius: 22.5px;
+  color: $colorWhite;
+  font-family: $roboto;
+  font-weight: $robotoNormal;
+  font-size: 20px;
+  border: none;
+  margin-top: 45px;
+  margin-bottom: 60px;
+  outline: none;
+  cursor: pointer;
+}

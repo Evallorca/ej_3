@@ -1,0 +1,103 @@
+// ******************* MENÚ DESPLEGABLE ********************
+
+.page {
+  margin: 0;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	position: relative;
+	&::after {
+		content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+		height: 0;
+		width: 0;
+		transition: background ease 1s .3s;
+	}
+}
+
+.menu-trigger {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: $colorBlue;
+	border: none;
+  outline: none;
+	cursor: pointer;
+	color: $colorWhite;
+	transition: background ease 0.3s;
+  z-index: 1;
+	&:hover {
+		background: $colorDarkBlue;
+	}
+}
+
+// El gradiente que oscurece la zona junto al menú desplegable (en este caso está debajo)
+.page--menu-visible {
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100vh;
+		width: 100vw;
+		background-color: $colorBlack;
+    opacity: 0.53;
+		z-index: 1;
+	}
+}
+.page__navigation {
+	position: absolute;
+	height: 100vh;
+	width: 276px;
+	background: $colorWhite;
+	left: -400px;
+	top: 0;
+	transition: left ease 0.8s;
+	.page--menu-visible & {
+		left: 0;
+		z-index: 2;
+	}
+}
+.menu-close {
+  width: 44px;
+  height: 44px;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	background: $colorOrange;
+	transition: background ease 0.3s;
+	position: absolute;
+	left: 100%;
+	z-index: 2;
+}
+.menu {
+	color: $colorDarkBlue;
+	margin: 0;
+	padding: 7px;
+	list-style: none;
+}
+.menu__item {
+	border-bottom: 1px solid rgba($colorLightBlue, 0.30);
+	&:first-child {
+    margin-top: 44px;
+		border-top: 1px solid rgba($colorLightBlue, 0.30);
+	}
+}
+.menu__link {
+	padding: 0 30px;
+	display: block;
+	padding: 17px;
+	color: inherit;
+	text-decoration: none;
+	transition: background ease 0.5s, color ease 0.2s;
+	&:hover {
+		color: $colorWhite;
+		background: $colorDarkBlue;
+	}
+}

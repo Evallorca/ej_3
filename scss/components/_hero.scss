@@ -1,0 +1,40 @@
+// ***************** BLOQUE HERO ******************
+
+.block-hero{
+    background-image: url("../images/cover.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-hero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $colorWhite;
+  margin-top: 27vh;
+  // background-color: brown;
+}
+
+.hero-title {
+  color: white;
+  font-family: &robotoSlab;
+  font-weight: $robotoSlabBold;
+  font-size: 8vw;
+  line-height: 100%;
+  margin: 0;
+  // background-color: yellow;
+}
+.hero-subtitle{
+  font-family: roboto;
+  font-size: 24px;
+}

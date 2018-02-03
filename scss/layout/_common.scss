@@ -1,0 +1,80 @@
+
+// ****************** CONTENIDO COMÚN ********************
+body{
+  font-family:  $robotoSlab;
+  margin: 0;
+  width: 100vw;
+  // background: purple;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin:0;
+  // background-color: cyan;
+
+}
+
+.common-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // background-color: lightpink;
+  width: 95vw;
+}
+
+// ***************MEDIAQUERIES*******************
+
+/*VERSIÓN TABLET*/
+
+@media all and (max-width: 920px){
+  .hero-title {
+    font-size: 10vw;
+}
+}
+
+@media all and (max-width: 768px){
+  .hero-title {
+    font-size: 10vw;
+  }
+  .hero-subtitle {
+    font-size: 3vw;
+  }
+
+  .box-description{
+    width: 90vw;
+    padding: 30px;
+  }
+
+  .button-description{
+    width: 91px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .hero-title {
+    font-size: 13vw;
+
+  }
+  .hero-subtitle {
+    font-size: 5vw;
+  }
+
+.page__navigation{
+  width: 78vw;
+}
+
+.button-description{
+  width: 76px;
+}
+
+.container-block-reasons {
+  display: flex;
+  flex-direction: column;
+}
+.block-reasons{
+width: 65vw;
+margin: auto;
+}
+}
